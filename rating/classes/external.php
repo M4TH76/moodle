@@ -256,7 +256,7 @@ class core_rating_external extends external_api {
 
         $context = self::get_context_from_params($params);
         self::validate_context($context);
-        $cm = get_coursemodule_from_id(false, $context->instanceid, 0, false, MUST_EXIST);
+        $cm = get_coursemodule_from_id(false, $context->instanceid, 0, false);
 
         require_capability('moodle/rating:rate', $context);
 
