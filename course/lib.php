@@ -5150,6 +5150,12 @@ function course_output_fragment_new_base_form($args) {
 
 function course_rating_validate($params) {
     //TODO add validation
-	return true;
+    return true;
 }
+
+function course_rating_permissions($params) {
+    //TODO add logic
+    return array('rate' => true, 'view' => true, 'viewany' => true, 'viewall' => true);
+}
+
 
