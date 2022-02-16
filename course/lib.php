@@ -5146,3 +5146,10 @@ function course_output_fragment_new_base_form($args) {
 
     return $o;
 }
+
+
+function course_rating_validate($params) {
+    //TODO add validation
+	return true;
+}
+
